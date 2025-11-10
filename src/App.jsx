@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import ringImage from '../public/icons/pattern-rings.svg';
+import ringImage from '/icons/pattern-rings.svg';
 import "./App.css";
 
 export default function App() {
@@ -220,7 +220,7 @@ ${formData.name}`;
                 </ul>
               </div>
               <figure className="hero-banner">
-                <img src="../public/images/hero-banner.png" alt="hero banner" />
+                <img src="/images/hero-banner.png" alt="hero banner" />
               </figure>
             </div>
           </section>
@@ -235,7 +235,7 @@ ${formData.name}`;
                   <li key={i}>
                     <div className="service-card" style={{ "--color": s.hue }}>
                       <div className="card-icon">
-                        <img src={`../public/icons/${s.icon}`} width="60" height="60" loading="lazy" alt="service icon" />
+                        <img src={`/icons/${s.icon}`} width="60" height="60" loading="lazy" alt="service icon" />
                       </div>
                       <h3 className="h3"><a href="#" className="card-title">{s.title}</a></h3>
                     </div>
@@ -249,7 +249,7 @@ ${formData.name}`;
           <section className="section feature" id="features" aria-label="feature">
             <div className="container">
               <figure className="feature-banner">
-                <img src="../public/images/feature-banner.png" width="582" height="585" loading="lazy" alt="feature banner" className="w-100" />
+                <img src="/images/feature-banner.png" width="582" height="585" loading="lazy" alt="feature banner" className="w-100" />
               </figure>
               <div className="feature-content">
                 <p className="section-subtitle has-before">Why Choose Gravity</p>
