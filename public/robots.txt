@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gravityservices.netlify.app/sitemap.xml
