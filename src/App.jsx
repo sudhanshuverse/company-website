@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import bgcimg from './assets/icons/pattern-rings.svg';
+import ringImage from '../public/icons/pattern-rings.svg';
 import "./App.css";
 
 export default function App() {
@@ -155,9 +155,9 @@ ${formData.name}`;
   ];
 
   const features = [
-    { icon: "rocket-sharp", title: "⚡ Fast Working Process", text: "At Gravity, we plan, design, and deliver projects quickly — without compromising quality.", hue: "174, 77%, 50%" },
-    { icon: "people-sharp", title: "👨‍💻 Dedicated Team", text: "Our skilled professionals work with passion and precision to bring your digital vision to life.", hue: "241, 77%, 63%" },
-    { icon: "call", title: "📞 24/7 Support", text: "We're always available to assist, update, and support you — anytime you need us.", hue: "343, 98%, 60%" },
+    { icon: "rocket-sharp", title: "Fast Working Process", text: "At Gravity, we plan, design, and deliver projects quickly — without compromising quality.", hue: "174, 77%, 50%" },
+    { icon: "people-sharp", title: "Dedicated Team", text: "Our skilled professionals work with passion and precision to bring your digital vision to life.", hue: "241, 77%, 63%" },
+    { icon: "call", title: "24/7 Support", text: "We're always available to assist, update, and support you — anytime you need us.", hue: "343, 98%, 60%" },
   ];
 
   return (
@@ -197,6 +197,7 @@ ${formData.name}`;
       {/* ==================== MAIN ==================== */}
       <main>
         <article>
+
           {/* ---------- HERO ---------- */}
           <section className="section hero" id="home" aria-label="hero">
             <div className="hero-section">
@@ -219,7 +220,7 @@ ${formData.name}`;
                 </ul>
               </div>
               <figure className="hero-banner">
-                <img src="/src/assets/images/hero-banner.png" alt="hero banner" />
+                <img src="../public/images/hero-banner.png" alt="hero banner" />
               </figure>
             </div>
           </section>
@@ -234,7 +235,7 @@ ${formData.name}`;
                   <li key={i}>
                     <div className="service-card" style={{ "--color": s.hue }}>
                       <div className="card-icon">
-                        <img src={`/src/assets/icons/${s.icon}`} width="60" height="60" loading="lazy" alt="service icon" />
+                        <img src={`../public/icons/${s.icon}`} width="60" height="60" loading="lazy" alt="service icon" />
                       </div>
                       <h3 className="h3"><a href="#" className="card-title">{s.title}</a></h3>
                     </div>
@@ -248,7 +249,7 @@ ${formData.name}`;
           <section className="section feature" id="features" aria-label="feature">
             <div className="container">
               <figure className="feature-banner">
-                <img src="/src/assets/images/feature-banner.png" width="582" height="585" loading="lazy" alt="feature banner" className="w-100" />
+                <img src="../public/images/feature-banner.png" width="582" height="585" loading="lazy" alt="feature banner" className="w-100" />
               </figure>
               <div className="feature-content">
                 <p className="section-subtitle has-before">Why Choose Gravity</p>
@@ -281,7 +282,7 @@ ${formData.name}`;
             <h2 className="section-main-title">CONTACT</h2>
             <p className="section-subtitle-para">I would love to hear about your project and how I could help. Please fill the form, and I'll get back to you as soon as possible.</p>
             <figure>
-              <img src={bgcimg} width="355" height="356" loading="lazy" alt="newsletter banner" className="w-100 roundimage" style={{ position: "absolute", left: "-40%" }} />
+              <img src={ringImage} width="355" height="356" loading="lazy" alt="newsletter banner" className="w-100 roundimage" style={{ position: "absolute", left: "-40%" }} />
             </figure>
           </div>
           <form className="Contect-form" onSubmit={handleSubmit} noValidate>
